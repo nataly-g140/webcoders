@@ -8,11 +8,14 @@
 
 html {
     scroll-behavior: smooth;
-  }
 
-body {
-    font-family: 'Poppins', sans-serif !important;
+  }
+   
+body{
+    font-family:'Poppinfonts', sans-serif !important; 
+
 }
+
 
 header nav.navbar {
     background-color: rgba(40, 40, 40, 0.5);
@@ -32,103 +35,136 @@ i.fas.fa-bars.fa-1x {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: var(--primary-color) !important;
+    color: var(--primary-color);
 }
 
-#bgFullWidth {
-    background: url(../img/imgBackground.jpg);
+#bg-2 { 
+    
+    background: url(../img/background-staff.jpg);
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    background-size: cover;
+
 }
 
 .container-full-width {
     position: relative;
-    height: 90vh;
-}
-
-#overlay {
-    background-color: rgba(40, 40, 40, 0.5);
-    width: 100vw;
-    height: 90vh;
 }
 
 .container-presentation {
     color: var(--white-color);
+
 }
 
-.icon-box {
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 21px;
-    background: rgba(255, 255, 255, 0.10);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+body{margin-top:20px;
+    background:#eee;
 }
 
-.icon-box:hover {
-    background: rgba(255, 255, 255, 0.10);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10.0px);
-    -webkit-backdrop-filter: blur(10.0px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    transition: 0.5s;
+.single_advisor_profile {
+        position: relative;
+        margin-bottom: 50px;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        z-index: 1;
+        border-radius: 15px;
+        -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+        box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
 }
 
-
-div.icon-box i {
-    color: var(--primary-color);
+.single_advisor_profile .advisor_thumb {
+        position: relative;
+        z-index: 1;
+        border-radius: 15px 15px 0 0;
+        margin: 0 auto;
+        padding: 30px 30px 0 30px;
+        background-color:var(--primary-color);
+        overflow: hidden;
 }
 
-div.icon-box h5 a {
-    color: var(--white-color);
+.single_advisor_profile .advisor_thumb::after {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        position: absolute;
+        width: 150%;
+        height: 80px;
+        bottom: -45px;
+        left: -25%;
+        content: "";
+        background-color: var(--primary-color);
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
 }
 
-div.icon-box h5 a:hover {
-    text-decoration: none;
+@media only screen and (max-width: 575px) {
+.single_advisor_profile .advisor_thumb::after {
+            height: 160px;
+            bottom: -90px;
+    }
 }
 
-.container-side-image{
-    background-image: url(../img/sideImage.jpg);
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: center;
+.single_advisor_profile .advisor_thumb .social-info {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        bottom: 0;
+        right: 30px;
+        text-align: right;
 }
 
-.container-black{
-    background-color: var(--black-color);
-    color: var(--primary-color);
-    font-weight: bold;
-    display: block;
-    width: fit-content;
-    padding: 10px 20px 2px 20px;
-    margin-top: 5px;
-    box-shadow: 0px 7px 15px 2px #909090;
+.div-integrante .advisor_thumb .social-info a {
+        font-size: 14px;
+        color: #020710;
+        padding: 0 5px;
 }
 
-.container-side__description {
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    justify-content: center;
-    text-align: right;
+.single_advisor_profile .div-integrante {
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        text-align: right;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        border-radius: 0 0 15px 15px;
+        background-color:var(--primary-color);
 }
 
-a.btn-more{
-    color: var(--black-color);
+.single_advisor_profile .single_advisor_details_info h6 {
+        margin-bottom: 0.25rem;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
 }
 
-a.btn-more:hover{
-    color: var(--black-color);
-    text-decoration: none;
-    font-weight: bold;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.single_advisor_profile .single_advisor_details_info h6 {
+            font-size: 14px;
+    }
+}
+
+.single_advisor_profile .single_advisor_details_info p {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        margin-bottom: 0;
+        font-size: 14px;
+     }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.single_advisor_profile .single_advisor_details_info p {
+            font-size: 12px;
+    }
+}
+
+.single_advisor_profile:hover .advisor_thumb::after,
+.single_advisor_profile:focus .advisor_thumb::after {
+        background-color:var(--primary-color);
+}
+
+.single_advisor_profile:hover .advisor_thumb .social-info a,
+.single_advisor_profile:focus .advisor_thumb .social-info a {
+        color: #ffffff;
 }
 
 footer{
@@ -153,116 +189,4 @@ footer{
 
 .footer-social-container a:hover {
     color: var(--white-color);
-}
-
-/* Contact */
-.container-image__contact img{
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08);
-    border: 10px solid var(--white-color);
-}
-
-.container-presentation__contact {
-    color: var(--white-color);
-    background: var(--black-color);
-}
-
-.contact-form .btn-custom__primary{
-    background-color: var(--primary-color);
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08);
-    border: none;
-    color: var(--black-color);
-}
-
-.contact-form .btn-custom__primary:hover{
-    color: var(--primary-color);
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08);
-    border: none;
-    background-color: var(--black-color);
-}
-
-/* The customcheck */
-.customcheck {
-    display: block;
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    font-size: 12px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    line-height: 24px;
-}
-
-.bg-dark{
-    transition: all 1s ease;
-}
-
-/* Hide the browser's default checkbox */
-.customcheck input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 5px;
-}
-
-/* On mouse-over, add a grey background color */
-.customcheck:hover input ~ .checkmark {
-    background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.customcheck input:checked ~ .checkmark {
-    background-color: var(--primary-color);
-    border-radius: 5px;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the checkmark when checked */
-.customcheck input:checked ~ .checkmark:after {
-    display: block;
-}
-
-/* Style the checkmark/indicator */
-.customcheck .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-/* Contact */
-
-/* Clients */
-.container-image__gallery img{
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08);
-}
-
-.container-image__gallery img:hover{
-    filter: brightness(0.4);
-    transition: all .75s;
-    cursor: pointer;
-}
-
-/* Clients */
+ }
