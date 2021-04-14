@@ -1,0 +1,268 @@
+:root {
+    --primary-color: #FFBB00;
+    --complement-color: #4E10AE;
+    --black-color: #1A1A1A;
+    --white-color: #F2F2F2;
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+header nav.navbar {
+    background-color: rgba(40, 40, 40, 0.5);
+}
+
+i.fas.fa-bars.fa-1x {
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: var(--white-color) !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: var(--primary-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+#bgFullWidth {
+    background: url(../img/imgBackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container-full-width {
+    position: relative;
+    height: 90vh;
+}
+
+#overlay {
+    background-color: rgba(40, 40, 40, 0.5);
+    width: 100vw;
+    height: 90vh;
+}
+
+.container-presentation {
+    color: var(--white-color);
+}
+
+.icon-box {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 21px;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.icon-box:hover {
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10.0px);
+    -webkit-backdrop-filter: blur(10.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: 0.5s;
+}
+
+
+div.icon-box i {
+    color: var(--primary-color);
+}
+
+div.icon-box h5 a {
+    color: var(--white-color);
+}
+
+div.icon-box h5 a:hover {
+    text-decoration: none;
+}
+
+.container-side-image{
+    background-image: url(../img/sideImage.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+
+.container-black{
+    background-color: var(--black-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+    padding: 10px 20px 2px 20px;
+    margin-top: 5px;
+    box-shadow: 0px 7px 15px 2px #909090;
+}
+
+.container-side__description {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    text-align: right;
+}
+
+a.btn-more{
+    color: var(--black-color);
+}
+
+a.btn-more:hover{
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer{
+    background-color: var(--black-color);
+    padding: 20px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-container{
+    height: auto;
+}
+
+.footer-social-container a {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.footer-social-container a:hover {
+    color: var(--white-color);
+}
+
+/* Contact */
+.container-image__contact img{
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08);
+    border: 10px solid var(--white-color);
+}
+
+.container-presentation__contact {
+    color: var(--white-color);
+    background: var(--black-color);
+}
+
+.contact-form .btn-custom__primary{
+    background-color: var(--primary-color);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08);
+    border: none;
+    color: var(--black-color);
+}
+
+.contact-form .btn-custom__primary:hover{
+    color: var(--primary-color);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08);
+    border: none;
+    background-color: var(--black-color);
+}
+
+/* The customcheck */
+.customcheck {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 24px;
+}
+
+.bg-dark{
+    transition: all 1s ease;
+}
+
+/* Hide the browser's default checkbox */
+.customcheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.customcheck:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.customcheck input:checked ~ .checkmark {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.customcheck input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.customcheck .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* Contact */
+
+/* Clients */
+.container-image__gallery img{
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08);
+}
+
+.container-image__gallery img:hover{
+    filter: brightness(0.4);
+    transition: all .75s;
+    cursor: pointer;
+}
+
+/* Clients */
