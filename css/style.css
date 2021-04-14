@@ -45,6 +45,16 @@ i.fas.fa-bars.fa-1x {
     padding: 0;
 }
 
+#bgFullWidth404 {
+    background: url(../img/tina-rataj-berard-0Q33pyk-AXI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
 .container-full-width {
     position: relative;
     height: 90vh;
