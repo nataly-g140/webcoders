@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #FFBB00;
+    --complement-color: #4E10AE;
+    --black-color: #1A1A1A;
+    --white-color: #F2F2F2;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+  }
+   
+body{
+    font-family:'Poppinfonts', sans-serif !important; 
+
+}
+
+
+header nav.navbar {
+    background-color: rgba(40, 40, 40, 0.5);
+}
+
+i.fas.fa-bars.fa-1x {
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: var(--white-color) !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: var(--primary-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+
+
+#bg-2 { 
+    
+    background: url(../img/background-staff.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+
+}
+
+.container-full-width {
+    position: relative;
+}
+
+
+#overlay h1 {
+    
+}
+.container-presentation {
+    color: var(--white-color);
+
+}
+
+body{margin-top:20px;
+    background:#eee;
+}
+.single_advisor_profile {
+        position: relative;
+        margin-bottom: 50px;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        z-index: 1;
+        border-radius: 15px;
+        -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+        box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+}
+.single_advisor_profile .advisor_thumb {
+        position: relative;
+        z-index: 1;
+        border-radius: 15px 15px 0 0;
+        margin: 0 auto;
+        padding: 30px 30px 0 30px;
+        background-color:var(--primary-color);
+        overflow: hidden;
+}
+.single_advisor_profile .advisor_thumb::after {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        position: absolute;
+        width: 150%;
+        height: 80px;
+        bottom: -45px;
+        left: -25%;
+        content: "";
+        background-color: var(--primary-color);
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+}
+@media only screen and (max-width: 575px) {
+.single_advisor_profile .advisor_thumb::after {
+            height: 160px;
+            bottom: -90px;
+    }
+}
+.single_advisor_profile .advisor_thumb .social-info {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        bottom: 0;
+        right: 30px;
+        text-align: right;
+}
+.div-integrante .advisor_thumb .social-info a {
+        font-size: 14px;
+        color: #020710;
+        padding: 0 5px;
+}
+
+
+.single_advisor_profile .div-integrante {
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        text-align: right;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        border-radius: 0 0 15px 15px;
+        background-color:var(--primary-color);
+}
+.single_advisor_profile .single_advisor_details_info h6 {
+        margin-bottom: 0.25rem;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.single_advisor_profile .single_advisor_details_info h6 {
+            font-size: 14px;
+    }
+}
+.single_advisor_profile .single_advisor_details_info p {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        margin-bottom: 0;
+        font-size: 14px;
+     }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.single_advisor_profile .single_advisor_details_info p {
+            font-size: 12px;
+    }
+}
+.single_advisor_profile:hover .advisor_thumb::after,
+.single_advisor_profile:focus .advisor_thumb::after {
+        background-color:var(--primary-color);
+}
+.single_advisor_profile:hover .advisor_thumb .social-info a,
+.single_advisor_profile:focus .advisor_thumb .social-info a {
+        color: #ffffff;
+}
+
+
+footer{
+    background-color: var(--black-color);
+    padding: 20px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-container{
+    height: auto;
+}
+
+.footer-social-container a {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.footer-social-container a:hover {
+    color: var(--white-color);
+ }
