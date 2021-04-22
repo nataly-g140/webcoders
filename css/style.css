@@ -58,6 +58,7 @@ i.fas.fa-bars.fa-1x {
 
 .container-presentation {
     color: var(--white-color);
+    height: 90vh;
 }
 
 .icon-box {
@@ -266,3 +267,207 @@ footer{
 }
 
 /* Clients */
+/* About */
+.container-side-image-team{
+    background-image: url(../img/sideImgTopAbout.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+
+.container-side-image-mission{
+    background-image: url(../img/sideImgBottonAbout.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+
+.container-side__about{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#overlay2 {
+    background-color: rgba(40, 40, 40, 0.5);
+    width: 100vw;
+    height: 80vh;
+}
+
+#overlay3 {
+    background-color: rgba(40, 40, 40, 0.5);
+    width: 100vw;
+    height: 20vh;
+}
+
+.yblock{
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-top: -30px;
+    z-index: -1;
+}
+/* About */
+
+/* Staff */
+
+html {
+    scroll-behavior: smooth;
+
+  }
+   
+body{
+    font-family:'Poppinfonts', sans-serif !important; 
+
+}
+
+
+header nav.navbar {
+    background-color: rgba(40, 40, 40, 0.5);
+}
+
+i.fas.fa-bars.fa-1x {
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: var(--white-color) !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: var(--primary-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.fa-youtube-square:before {
+    content: "\f431" !important;
+}
+
+
+#bg-2 { 
+    
+    background: url(../img/background-staff.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+
+}
+
+.container-full-width {
+    position: relative;
+}
+
+.single_advisor_profile {
+        position: relative;
+        margin-bottom: 50px;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        z-index: 1;
+        border-radius: 15px;
+        -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+        box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+}
+
+.single_advisor_profile .advisor_thumb {
+        position: relative;
+        z-index: 1;
+        border-radius: 15px 15px 0 0;
+        margin: 0 auto;
+        padding: 30px 30px 0 30px;
+        background-color:var(--primary-color);
+        overflow: hidden;
+}
+
+.single_advisor_profile .advisor_thumb::after {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        position: absolute;
+        width: 150%;
+        height: 80px;
+        bottom: -45px;
+        left: -25%;
+        content: "";
+        background-color: var(--primary-color);
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+}
+
+
+.single_advisor_profile .advisor_thumb .social-info {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        bottom: 0;
+        right: 30px;
+        text-align: right;
+}
+
+.div-integrante .advisor_thumb .social-info a {
+        font-size: 14px;
+        color: #020710;
+        padding: 0 5px;
+}
+
+.single_advisor_profile .div-integrante {
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        text-align: right;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        border-radius: 0 0 15px 15px;
+        background-color:var(--primary-color);
+}
+
+.single_advisor_profile .single_advisor_details_info h6 {
+        margin-bottom: 0.25rem;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+}
+
+@media only screen and (max-width: 575px) {
+    .single_advisor_profile .advisor_thumb::after {
+                height: 160px;
+                bottom: -90px;
+        }
+    }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.single_advisor_profile .single_advisor_details_info h6 {
+            font-size: 14px;
+    }
+}
+.single_advisor_profile .single_advisor_details_info p {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        margin-bottom: 0;
+        font-size: 14px;
+     }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.single_advisor_profile .single_advisor_details_info p {
+            font-size: 12px;
+    }
+}
+
+.single_advisor_profile:hover .advisor_thumb::after,
+.single_advisor_profile:focus .advisor_thumb::after {
+        background-color:var(--primary-color);
+}
+.single_advisor_profile:hover .advisor_thumb .social-info a,
+.single_advisor_profile:focus .advisor_thumb .social-info a {
+        color: #ffffff;
+}
+
+/* Staff */

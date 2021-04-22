@@ -28,7 +28,7 @@
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="menu">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="./img/logoCodersMkt.svg" alt="Coders MKT AND DEV" width="100">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -59,12 +59,13 @@
     </header>
     <!-- Navigation -->
 
-    <div id="container-presentatio__contact" class="container-fluid container-full-width container-presentation__contact">
-        <div id="overlay"
+    <div id="container-presentatio__contact"
+        class="container-fluid container-full-width container-presentation__contact">
+        <div
             class="row d-flex justify-content-center align-items-center font-weight-bold container-presentation flex-column text-center">
             <h1 class="font-weight-bold mt-5">Contactate con nosotros!!</h1>
             <h3 class="font-weight-light mt-5">Marketing digital y desarrollo de software</h3>
-            <img src="./img/logoCodersMkt.svg" alt="Coders MKT AND DEV" width="300">
+            <img class="img-fluid" src="./img/logoCodersMkt.svg" alt="Coders MKT AND DEV" width="300">
         </div>
     </div>
 
@@ -72,8 +73,8 @@
     <!-- Main -->
     <main class="container-fluid">
         <div class="row">
-            <div class="col col-md-6 mt-5 mb-5 d-flex justify-content-center justify-content-center">
-                <form class="ml-5 contact-form">
+            <div class="col-12 col-md-6 mt-5 mb-5 d-flex justify-content-center justify-content-center">
+                <form class="contact-form">
                     <h2>Contactate con nosotros!!</h2>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Direccion de Email</label>
@@ -96,8 +97,8 @@
                 </form>
             </div>
             <div
-                class="col col-md-6 d-flex justify-content-center align-items-center container-image__contact mt-5 mb-5">
-                <img src="./img/imgContact.jpg" alt="Contact coders MKT AND Marketing">
+                class="col-12 col-md-6 d-flex justify-content-center align-items-center container-image__contact mt-5 mb-5">
+                <img class="img-fluid" src="./img/imgContact.jpg" alt="Contact coders MKT AND Marketing">
             </div>
         </div>
     </main>
@@ -106,7 +107,7 @@
     <footer class="container-fluid">
         <div class="row footer-container">
             <div class="col-12 col-md-6 text-center mt-3">
-                <img src="./img/logoCodersMkt.svg" alt="coders MKT AND DEVS" width="200px">
+                <img class="img-fluid" src="./img/logoCodersMkt.svg" alt="coders MKT AND DEVS" width="200px">
             </div>
             <div class="col-12 col-md-6 mt-3">
                 <ul
@@ -141,15 +142,15 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
 
-<script>
-    $(window).scroll(function () {
-        if ($("#menu").offset().top > $("#container-presentatio__contact").height() - 150) {
-            $("#menu").addClass("bg-dark");
-        } else {
-            $("#menu").removeClass("bg-dark");
-        }
-    });
-</script>
+    <script>
+        $(window).scroll(function () {
+            if ($("#menu").offset().top > $("#container-presentatio__contact").height() - 150) {
+                $("#menu").addClass("bg-dark");
+            } else {
+                $("#menu").removeClass("bg-dark");
+            }
+        });
+    </script>
     <!-- script -->
 </body>
 
